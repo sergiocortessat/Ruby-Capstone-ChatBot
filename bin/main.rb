@@ -23,21 +23,21 @@ condition = true
 
 condiftion_y = true
 while condiftion_y == true
-  case user_input
-  when user_input == 'Y'
-    puts 'Please eter yout token key'
+  if user_input == 'Y'
+    condiftion_y = false
+    puts 'Please eter your token key'
     user_token = gets.chomp
     while condition == true
       begin
-        token_id(user_token)
         puts 'the bot has started..'
+        token_id(user_token)
         condition == false
       rescue StandardError
         puts 'Wrong token. try again'
         user_token = gets.chomp
       end
     end
-  when user_input == 'N'
+  elsif user_input == 'N'
     condiftion_y = false
     puts 'the bot has started..'
     token_id

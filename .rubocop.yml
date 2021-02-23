@@ -55,5 +55,8 @@ Metrics/PerceivedComplexity:
   Enabled: false
 Metrics/BlockNesting:
   Enabled: true
-  Max: 4
+  Max: 5
+Style/CaseLikeIf:
+  Enabled: false
+
 
