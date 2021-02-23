@@ -3,6 +3,7 @@ require 'telegram/bot'
 require_relative 'jokes'
 require_relative 'motivational'
 require_relative '../token'
+require_relative 'stock'
 
 class BotLogic
   attr_reader :token
@@ -34,6 +35,10 @@ class BotLogic
           motivation = Phrases.new
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Thanks for trying this chatbot #{message.from.first_name}.I hope this inspires you: #{motivation.random_phrase['text']} Author: #{motivation.phrase_sample['author']}")
+
+        when 'stock'
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "I am programmed to keep you updated on Teslas stock market price #{message.from.first_name}. At this moment, the stock price is #{RESPONSE[1][12..-1]} USD")
         else
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Sorry, I don't understand '#{message.text}'. I only understand `hello` `who` `joke` 'options' and `motivation`")

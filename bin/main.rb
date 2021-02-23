@@ -2,6 +2,7 @@
 require_relative '../lib/bot_logic'
 require_relative '../lib/motivational'
 require_relative '../lib/jokes'
+require_relative '../lib/stock'
 
 def token_id(token = nil)
   if token.nil?
@@ -32,6 +33,7 @@ if user_input == 'Y'
     end
   end
 else
+  puts 'the bot has started..'
   token_id
 
 end

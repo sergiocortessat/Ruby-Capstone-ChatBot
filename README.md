@@ -68,13 +68,14 @@ This is an example of how you may give instructions on setting up your project l
 13. Please make sure to read the instructions. Enter 'Y' if you want to enter manually your token key. Otherwise pres 'N' (Warning: If you select 'N' Make sure to have   the token saved in the file token.rb. Read step 8)
 14. If you have correctly entered your token key in the terminal or the token.rb file, the bot should be running and ready to use. Please don't close it.
 15. Please direct yourself to Telegram once again and search for the username you gave to the bot (you can click on the link given by FatherBot).
-16. Start a conversation. Please use commands 'hello', 'options', 'jokes','motivation' or 'who'
+16. Start a conversation. Please use commands 'hello', 'options', 'jokes','motivation', 'stock' or 'who'
 
 - 'hello' will prompt a nice welcome message.
 -' who' will provide some basic info about the bot itself.
 - 'options' will provide all options available for the bot
 - 'joke' will provide you with daily jokes
 - 'motivation' will provide wonderful random quotes for you
+- 'stock provides the latest stock price market for Tesla motros INC.
 
 You can autonomously alter the messages and commands in bot.rb to something you prefer.
 
