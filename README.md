@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-<img height="auto" src="rspec_enumerables.gif">
+<img height="auto" src="Screenshot2.png">
 </p>
 
 ### Built With
