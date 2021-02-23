@@ -18,8 +18,6 @@ puts 'Enter Y or N'
 
 user_input = gets.chomp.upcase
 condition = true
-
-condition = true
 if user_input == 'Y'
   puts 'Please eter yout token key'
   user_token = gets.chomp
@@ -35,6 +33,6 @@ if user_input == 'Y'
     end
   end
 else
-  puts 'the bot has started..'
+
   token_id
 end
