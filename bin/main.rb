@@ -33,6 +33,6 @@ if user_input == 'Y'
     end
   end
 else
-
+  puts 'the bot has started..'
   token_id
 end
