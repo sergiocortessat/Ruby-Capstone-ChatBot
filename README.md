@@ -110,7 +110,7 @@ The testing file is included in spec folder under spec_logic.rb.
 
 
 
-Project Link: [Ruby-capstone](https://github.com/sergiocortessat/Ruby-Rspec-Enumerables/issues/2)
+Project Link: [Ruby-capstone](https://github.com/sergiocortessat/Ruby-Capstone-ChatBot/issues/2)
 
 
 <!-- ACKNOWLEDGEMENTS -->
