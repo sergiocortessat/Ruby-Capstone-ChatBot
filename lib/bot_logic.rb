@@ -19,7 +19,7 @@ class BotLogic
         when 'hello'
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Hello, #{message.from.first_name}. Welcome to this simple chatbot.
-                               You can try different options. If unsure, please write /options")
+          You can try different options. If unsure, please write /options")
         when 'who'
           bot.api.send_message(chat_id: message.chat.id,
                                text: "I am simple bot created to help you boost your daily mood.
@@ -48,5 +48,4 @@ class BotLogic
       end
     end
   end
-
 end
