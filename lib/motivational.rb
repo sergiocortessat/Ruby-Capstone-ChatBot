@@ -1,16 +1,21 @@
-require 'uri'
+require 'json'
 require 'net/http'
-require 'openssl'
 
-url = URI("https://andruxnet-random-famous-quotes.p.rapidapi.com/?cat=movies&count=10")
+class Phrases
+  attr_reader :phrase_sample
 
-http = Net::HTTP.new(url.host, url.port)
-http.use_ssl = true
-http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  def initialize
+    @phrase_sample = make_request
+  end
 
-request = Net::HTTP::Post.new(url)
-request["x-rapidapi-key"] = '7b0d6b3887mshd5b520377187b31p169647jsn6e86263f3722'
-request["x-rapidapi-host"] = 'andruxnet-random-famous-quotes.p.rapidapi.com'
+  def random_phrase
+    @phrase_sample = @phrase_sample.sample
+  end
 
-response = http.request(request)
-puts response.read_body
+  # private
+
+  def make_request
+    uri = URI('https://type.fit/api/quotes')
+    JSON.parse(Net::HTTP.get(uri))
+  end
+end
