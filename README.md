@@ -8,6 +8,9 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
+
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
 
@@ -89,13 +92,12 @@ In this project, the testing was done using RSpec to test logic specs.
 - Inside spec folder, you'll see a spec_helper.rb file.
 
 ## Run
-The testing file is included in spec folder under rspec_enumerables.rb.
+The testing file is included in spec folder under spec_logic.rb.
 - go to the folder spec: 
 - cd spec
 - Inside your terminal type: 
-- RSpec spec_enumerables.rb
+- RSpec spec_logic.rb
 - All test should pass and you shall see:
-
  - `9 examples, 0 failures` for spec_logic.rb
  
 
