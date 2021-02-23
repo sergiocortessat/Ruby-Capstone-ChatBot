@@ -2,13 +2,18 @@
 require 'telegram/bot'
 require_relative 'jokes'
 require_relative 'motivational'
+require_relative 'token'
 
 class BotLogic
   attr_reader :token
 
   def initialize(token = nil)
-    @token = token
-    Telegram::Bot::Client.run('1565232960:AAEH6D-6Te-C7MS3j8e-OEjXyvnzKkM4KN4') do |bot|
+    @token = if token.nil?
+               TOKEN['token_key']
+             else
+               token
+             end
+    Telegram::Bot::Client.run(@token) do |bot|
       bot.listen do |message|
         case message.text
         when 'hello'
@@ -34,8 +39,7 @@ class BotLogic
           motivation = Phrases.new
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Thanks for trying this chatbot #{message.from.first_name}.
-                               I hope this inspires you: #{motivation.random_phrase['text']}.
-                               Author: #{motivation.random_phrase['author']}")
+                               I hope this inspires you: #{motivation.random_phrase['text']}. Author: #{motivation.phrase_sample['author']}")
         else
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Sorry, I don't understand '#{message.text}'.
@@ -44,4 +48,5 @@ class BotLogic
       end
     end
   end
+
 end
