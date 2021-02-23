@@ -2,4 +2,6 @@
 require_relative '../lib/logic1'
 require_relative '../lib/logic2'
 
-start = BotLogic.new
+puts 'bot is running'
+bot = BotLogic.new
+bot.initilize
