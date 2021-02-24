@@ -34,7 +34,11 @@ class BotLogic
         when 'motivation'
           motivation = Phrases.new
           bot.api.send_message(chat_id: message.chat.id,
-                               text: "Thanks for trying this chatbot #{message.from.first_name}.I hope this inspires you: #{motivation.random_phrase['text']} Author: #{motivation.phrase_sample['author']}")
+                               text: "Thanks for trying this chatbot #{message.from.first_name}.I hope this inspires you:")
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "'#{motivation.random_phrase['text']}'.")
+          bot.api.send_message(chat_id: message.chat.id,
+                               text: "The Author of this phrase is: #{motivation.phrase_sample['author']}")
 
         when 'stock'
           bot.api.send_message(chat_id: message.chat.id,

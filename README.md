@@ -19,11 +19,11 @@ The Ruby - ChatBot is a tool that helps user to boost their daily routine with s
 ## Screenshot Test
 
 <p align="center">
-  <img height="auto" src="Screenshot.png">
+  <img height="auto" src="screenshots/Screenshot.png">
 </p>
 
 <p align="center">
-<img height="auto" src="Screenshot2.png">
+<img height="auto" src="screenshots/Screenshot2.png">
 </p>
 
 ### Built With
@@ -74,7 +74,7 @@ This is an example of how you may give instructions on setting up your project l
 16. Start a conversation. Please use commands 'hello', 'options', 'jokes','motivation', 'stock' or 'who'
 
 - 'hello' will prompt a nice welcome message.
--' who' will provide some basic info about the bot itself.
+- 'who' will provide some basic info about the bot itself.
 - 'options' will provide all options available for the bot
 - 'joke' will provide you with daily jokes
 - 'motivation' will provide wonderful random quotes for you
@@ -92,13 +92,13 @@ In this project, the testing was done using RSpec to test logic specs.
 - Inside spec folder, you'll see a spec_helper.rb file.
 
 ## Run
-The testing file is included in spec folder under spec_logic.rb.
+The testing file is included in spec folder under logicrspec.rb.
 - go to the folder spec: 
 - cd spec
 - Inside your terminal type: 
-- RSpec spec_logic.rb
+- RSpec logicrspec.rb
 - All test should pass and you shall see:
- - `9 examples, 0 failures` for spec_logic.rb
+ - `9 examples, 0 failures` for logicrspec.rb
  
 
 ## Authors
