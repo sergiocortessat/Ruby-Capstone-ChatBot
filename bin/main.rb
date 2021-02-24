@@ -19,7 +19,7 @@ puts 'Enter Y or N'
 user_input = gets.chomp.upcase
 condition = true
 if user_input == 'Y'
-  puts 'Please enter yout Token Key'
+  puts 'Please enter yout Token Key.'
   user_token = gets.chomp
   while condition == true
     begin
