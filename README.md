@@ -28,7 +28,7 @@ The Ruby - ChatBot is a tool that helps user to boost their daily routine with s
 
 ### Built With
 
-* [RUBY](https://github.com/sergiocortessat/Ruby-Rspec-Enumerables/tree/rspec)
+* [RUBY](https://github.com/sergiocortessat/Ruby-Capstone-ChatBot/tree/development)
 
 ## Contributing
 

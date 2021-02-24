@@ -19,13 +19,12 @@ puts 'Enter Y or N'
 user_input = gets.chomp.upcase
 condition = true
 if user_input == 'Y'
-  puts 'Please eter yout token key'
+  puts 'Please enter yout Token Key'
   user_token = gets.chomp
-  token_id(user_token)
   while condition == true
     begin
-      token_id(user_token)
       puts 'the bot has started..'
+      token_id(user_token)
       condition == false
     rescue StandardError
       puts 'Wrong token. try again'

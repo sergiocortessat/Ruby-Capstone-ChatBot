@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'crono'
+gem 'json'
+gem 'rspec'
+gem 'telegram-bot-ruby'
