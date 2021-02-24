@@ -6,16 +6,16 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 240
 Metrics/MethodLength:
-  Max: 20
+  Max: 40
 Metrics/AbcSize:
-  Max: 50
+  Max: 80
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
-  Max: 30
+  Max: 50
 
 
 Style/Documentation:
@@ -53,4 +53,9 @@ Metrics/CyclomaticComplexity:
   Enabled: false
 Metrics/PerceivedComplexity:
   Enabled: false
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 5
+
+
 
