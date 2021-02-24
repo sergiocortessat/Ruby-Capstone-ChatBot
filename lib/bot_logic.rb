@@ -38,7 +38,7 @@ class BotLogic
           bot.api.send_message(chat_id: message.chat.id,
                                text: "'#{motivation.random_phrase['text']}'.")
           bot.api.send_message(chat_id: message.chat.id,
-                               text: "The Author of this phrase is: #{motivation.phrase_sample['author']}")
+                               text: "The Author of this phrase is '#{motivation.phrase_sample['author']}'")
 
         when 'stock'
           bot.api.send_message(chat_id: message.chat.id,
