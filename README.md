@@ -28,7 +28,7 @@ The Ruby - ChatBot is a tool that helps user to boost their daily routine with s
 
 ### Built With
 
-* [RUBY](https://github.com/sergiocortessat/Ruby-Capstone-ChatBot/tree/development)
+* [RUBY](https://github.com/sergiocortessat/Ruby-Capstone-ChatBot)
 
 ## Contributing
 
@@ -50,9 +50,9 @@ This is an example of how you may give instructions on setting up your project l
 ## Clone project
 
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/Ruby-Capstone-bot.git``` using your terminal or command line.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/Ruby-Capstone-ChatBot``` using your terminal or command line.
 - Change to the project directory by entering :
-```cd Ruby-Capstone-bot``` in the terminal .
+```cd Ruby-Capstone-ChatBot``` in the terminal .
 - run the command ```ruby /bin main.rb```
 
 ## How to Install and use the ChatBot

@@ -13,17 +13,17 @@ def token_id(token = nil)
 end
 
 puts 'Welcome to the bot set up..'
-puts 'You can enter your key and use one time, or set it up on the token.rb file. Please read instructions'
+puts 'You can enter your key and use it one time, or set it up on the token.rb file. Please read instructions'
 puts 'Enter Y or N'
 
 user_input = gets.chomp.upcase
 condition = true
 if user_input == 'Y'
-  puts 'Please enter yout Token Key.'
+  puts 'Please enter your Token Key.'
   user_token = gets.chomp
   while condition == true
     begin
-      puts 'the bot has started..'
+      puts 'The bot has started...'
       token_id(user_token)
       condition == false
     rescue StandardError
@@ -32,6 +32,6 @@ if user_input == 'Y'
     end
   end
 else
-  puts 'the bot has started..'
+  puts 'The bot has started...'
   token_id
 end
