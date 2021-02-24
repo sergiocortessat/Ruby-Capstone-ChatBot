@@ -12,8 +12,6 @@ class Phrases
     @phrase_sample = @phrase_sample.sample
   end
 
-  private
-
   def make_request
     uri = URI('https://type.fit/api/quotes')
     JSON.parse(Net::HTTP.get(uri))
