@@ -14,7 +14,7 @@
 <!-- ABOUT THE PROJECT   -->
 ## About The Project
 
-The Ruby - ChatBot is a tool that helps user to boost their daily routine with some jokes and motivational phrases. The overall intentation is to help people to boost their productivity or change their mood status.
+The Ruby - ChatBot is a tool that helps the user to boost their daily routine with some jokes and motivational phrases. The overall intention is to help people to boost their productivity or change their mood status.
 
 ## Screenshot Test
 
